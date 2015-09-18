@@ -19,16 +19,93 @@ function draw() {
 	fill(199,251,253)
 	rect(173, 25, 110,70)
 
-	//draw sky
 
+
+var dayNight = random(1);
+
+if (dayNight > 0.5) {
+	fill(0,5,116)
+	rect(173, 25, 110,70)
 	fill(255,255,0)
-  ellipse(203,40,20,20)
+	ellipse(233,40,20,20)
+	fill(0,5,116)
+	ellipse(230,40,15,15)
+  fill(255,255,255)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	ellipse(random(173,283),random(25,95),1,1)
+	
+}else{//draw sky
 
-	fill(255,255,255)
-	ellipse(232,60,30,20)
-	ellipse(242,70,30,20)
-	ellipse(252,70,30,20)
+fill(255,255,0)
+ellipse(203,40,20,20)
 
+fill(255,255,255)
+ellipse(232,60,30,20)
+ellipse(242,70,30,20)
+ellipse(252,70,30,20)
+}
   //draw wall
 	fill(139,138,136)
   rect(0, 0, 140, 290)
@@ -51,6 +128,14 @@ function draw() {
   fill(139,138,136);
 	triangle(0,300,150,200,0,200)
 	triangle(640,300,640,200,490,200)
+
+  if (dayNight>0.5){
+	fill(38,42,57)
+  rect(0, 0, 140, 210)
+  rect(490, 0, 160, 210)
+	triangle(0,300,150,200,0,200)
+	triangle(640,300,640,200,490,200)
+}
 
 	//draw character's face
 
@@ -161,7 +246,6 @@ function draw() {
 //rect(453, 48, 20,15)
 //rect(461, 66, 30,15)
 
-	var dayNight = random(1);
 
 if (dayNight < 0.5) {
 			 fill(0,0,0);
@@ -231,5 +315,8 @@ if (dayNight < 0.5){
  rect(370, 166, 20,15)
  rect(453, 148, 20,15)
  rect(461, 166, 30,15)
+ fill(202,79,217)
+ ellipse(120,140,30,20)
+ ellipse(180,140,30,20)
 }
 }
