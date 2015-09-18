@@ -29,7 +29,7 @@ if (dayNight > 0.5) {
 	fill(255,255,0)
 	ellipse(233,40,20,20)
 	fill(0,5,116)
-	ellipse(230,40,15,15)
+	ellipse(random(210,230),40,15,15)
   fill(255,255,255)
 	ellipse(random(173,283),random(25,95),1,1)
 	ellipse(random(173,283),random(25,95),1,1)
@@ -95,7 +95,7 @@ if (dayNight > 0.5) {
 	ellipse(random(173,283),random(25,95),1,1)
 	ellipse(random(173,283),random(25,95),1,1)
 	ellipse(random(173,283),random(25,95),1,1)
-	
+
 }else{//draw sky
 
 fill(255,255,0)
